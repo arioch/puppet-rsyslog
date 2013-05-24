@@ -1,4 +1,4 @@
-# = Class rsyslog::config
+# == Class rsyslog::config
 #
 class rsyslog::config {
   File {

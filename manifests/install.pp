@@ -1,4 +1,4 @@
-# = Class rsyslog::install
+# == Class rsyslog::install
 #
 class rsyslog::install {
   package { $::rsyslog::pkg_list:

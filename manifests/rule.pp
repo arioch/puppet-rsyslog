@@ -1,4 +1,4 @@
-# = Define rsyslog::rule
+# == Define rsyslog::rule
 #
 define rsyslog::rule (
   $content = undef,

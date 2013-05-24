@@ -1,4 +1,4 @@
-# = Class rsyslog
+# == Class rsyslog
 #
 class rsyslog (
   $config_dir         = $::rsyslog::params::config_dir,

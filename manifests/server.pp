@@ -1,4 +1,4 @@
-# = Class rsyslog::server
+# == Class rsyslog::server
 #
 class rsyslog::server {
   if $::rsyslog::server {

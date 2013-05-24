@@ -1,4 +1,4 @@
-# = Define rsyslog::inputfile
+# == Define rsyslog::inputfile
 #
 define rsyslog::inputfile (
   $inputfilename,

@@ -1,4 +1,4 @@
-# = Class rsyslog::params
+# == Class rsyslog::params
 #
 class rsyslog::params {
   $server         = false

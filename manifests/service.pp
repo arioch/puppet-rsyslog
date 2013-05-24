@@ -1,4 +1,4 @@
-# = Class rsyslog
+# == Class rsyslog
 #
 class rsyslog::service {
   if $::rsyslog::service_dep {
