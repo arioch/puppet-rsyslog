@@ -5,12 +5,12 @@ $template RemoteHost,"/var/log/remote/hosts/%HOSTNAME%/syslog.log"
 *.* ?RemoteHost
 <% if @server_udp_enable %>
 $ModLoad imudp
-$UDPServerAddress <%= scope.lookupvar('rsyslog::server_udp_address') %>
-$UDPServerRun <%= scope.lookupvar('rsyslog::server_udp_port') %>
+$UDPServerAddress <%= @server_udp_address %>
+$UDPServerRun <%= @server_udp_port %>
 <% end -%>
 <% if @server_tcp_enable %>
 $ModLoad imptcp
-$Address <%= scope.lookupvar('rsyslog::server_tcp_address') %>
-$InputPTCPServerRun <%= scope.lookupvar('rsyslog::server_tcp_port') %>
+$Address <%= @server_tcp_address %>
+$InputPTCPServerRun <%= @server_tcp_port %>
 <% end -%>
 
